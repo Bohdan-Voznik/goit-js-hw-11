@@ -1,0 +1,152 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 1200px;
+  // outline: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+div .is-hidden {
+  display: none;
+}
+
+.header {
+  background-color: #2b47a8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-form {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+.serch {
+  font-size: 20px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 500px;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.serch:focus {
+  outline: none;
+}
+
+.search-button {
+  width: 40px;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 0px 6px 6px 0px;
+}
+.search-button:hover,
+.search-button:focus {
+  cursor: pointer;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+.serch-icon {
+  width: 20px;
+  height: 20px;
+  fill: #2b47a8;
+}
+
+// ----------Galleru----------
+.wrapper {
+  padding-top: 15px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.photo-card {
+  margin: 15px;
+  flex-basis: calc((100% - 120px) / 4);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img {
+  object-fit: cover;
+  width: 270px;
+  height: 200px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  text-align: center;
+}
+.info-item {
+  margin: 0;
+  padding: 5px;
+  width: 61px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.info-item b {
+  font-size: 9px;
+}
+.info-item span {
+  font-size: 14px;
+}
+
+.load-more {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  color: #fff;
+  background-color: #2b47a8;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.load-more:hover,
+.load-more:focus {
+  cursor: pointer;
+  background-color: #233b93;
+}
+
+.load-more__wraper {
+  display: flex;
+  justify-content: center;
+}
+.load-more__text {
+  margin: 0;
+}
+.loader {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
